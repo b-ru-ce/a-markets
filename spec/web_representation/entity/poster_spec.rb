@@ -22,7 +22,7 @@ describe WebRepresentation::Entity::Poster do
   }
 
   it('should correct init id') {
-    expect(poster.id).to eql(id)
+    expect(poster.id).to eql(123)
   }
 
   it('#date_range= should work with WebRepresentation::Values::DateRange') {
