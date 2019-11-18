@@ -10,10 +10,10 @@ module WebRepresentation
       end
 
       def date_range=(date_range)
-        if date_range.is_a?(WebRepresentation::Values::DateRange)
+        if date_range.is_a?(Values::DateRange)
           @date_range = date_range
         else
-          @date_range = WebRepresentation::Values::DateRange.new(date_range)
+          @date_range = Values::DateRange.new(date_range)
         end
       end
     end

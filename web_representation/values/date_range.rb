@@ -8,8 +8,8 @@ module WebRepresentation
       def initialize(value)
         if value.is_a?(String)
           dates = value.split('..')
-          start_date = ::Date.parse(dates[0])
-          end_date = ::Date.parse(dates[1])
+          start_date = Date.parse(dates[0])
+          end_date = Date.parse(dates[1])
           @range = (start_date..end_date)
         else
           @range = value
