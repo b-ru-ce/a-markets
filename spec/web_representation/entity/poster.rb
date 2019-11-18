@@ -6,7 +6,7 @@ describe WebRepresentation::Entity::Poster do
   }
 
   let(:poster){
-    described_class.new(name: name, date_range: date_range)
+    described_class.new(name: name, date_range: date_range, id: 123)
   }
 
   let(:name){
@@ -19,6 +19,10 @@ describe WebRepresentation::Entity::Poster do
 
   it('should correct init name') {
     expect(poster.name).to eql(name)
+  }
+
+  it('should correct init id') {
+    expect(poster.id).to eql(id)
   }
 
   it('#date_range= should work with WebRepresentation::Values::DateRange') {
