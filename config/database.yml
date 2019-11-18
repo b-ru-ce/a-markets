@@ -1,0 +1,6 @@
+database:
+  adapter: postgress
+  host: localhost
+  username: root
+  password: root
+  database: a_markets_ddd

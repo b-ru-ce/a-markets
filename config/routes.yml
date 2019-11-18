@@ -1,0 +1,10 @@
+routes:
+  - path: "/posters/create"
+    module: "web_representation"
+    action: "create"
+  - path: "/posters/delete"
+    module: "web_representation"
+    action: "delete"
+  - path: "/posters/index"
+    module: "web_representation"
+    action: "index"
