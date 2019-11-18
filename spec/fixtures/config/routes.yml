@@ -1,0 +1,7 @@
+routes:
+  - path: "/test/create"
+    module: "module_1"
+    action: "create"
+  - path: "/test_2/delete"
+    module: "module_2"
+    action: "delete"
